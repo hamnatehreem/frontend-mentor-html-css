@@ -1,0 +1,347 @@
+header{
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+
+.navigationbar{
+    padding: 30px 60px;
+    /* margin-right: 0%; */
+    /* height: 60px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav{
+    font-family: 'Inter'; 
+    display: flex;
+    gap: 70px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+} 
+nav a:hover{color: red}
+
+.logo{
+    margin: 0;
+    color: black;
+    height: 50px;
+}
+
+.textcolor{
+    color: rgb(145, 142, 142);
+    text-decoration: none;
+}
+
+.mainflex{
+    display: flex;
+    gap: 40px;
+    padding: 0 60px 50px;
+}
+
+@media (max-width: 900px){
+  .mainflex{ flex-direction: column; }
+}
+
+.leftflex{
+    /* thisis a shortchut for flex-grow */
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bigphototext{
+    display:flex;
+    /* flex: 2;
+    flex-direction: column;
+    height: 300px; */
+    gap: 40px;
+    /* margin-top: 25px; */
+    /* padding: 1px; */
+    /* color: rgb(145, 142, 142); */
+}
+
+.bigphototext h1{
+    flex: 1;
+    font-family: 'Inter'; font-size:3.4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.bigphotoimg{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+     display: block;
+}
+
+/* .bigphototext div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+.bigphoto-boxdescription{
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+/* .bigphototext h2 {
+
+      margin: 0;
+      flex :1;
+      color:black;
+      font-family: 'Inter'; font-size:4rem;
+      font-weight: 800;
+      display:flex;
+
+      line-height: 1;
+      
+    } */
+    
+.bigphototext p {
+      /* margin-bottom: 15px; */
+     /* margin: 0 0 20px; */
+      /* flex:1; */
+      /* display:flex; */
+      /* flex-direction: column;
+      justify-content: space-between; */
+      font-size: 1.05rem;
+       color: rgb(145, 142, 142);
+       line-height: 1.7;
+    }
+.bigphototext button {
+      /* margin-top: 25px; */
+      background: rgb(252, 105, 80);
+      border: none;
+      padding: 12px 30px;
+      /* width: 9%; */
+      color: rgb(6, 6, 6);
+      font-weight: 700;
+      display: flex;
+      /* flex-direction: row; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      align-self: flex-start;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      /* transition: background .25s; */
+    }
+
+.bigphototext button:hover{
+     background-color: rgb(122, 116, 116);
+    }
+
+.childflex{
+    flex: 1;
+    background-color: rgb(16, 16, 36);
+    color: white;
+    padding: 25px;
+    /* border-radius: 8px; */
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.childflex h2{
+    color:orange;
+    /* margin-bottom: 20px; */
+    font-family: 'Inter'; font-size:2.2rem;
+}
+
+.childflex article{
+    border-top: 1px solid rgb(148, 90, 148);
+    padding-top: 25px;
+}
+
+.childflex h3{
+    margin: 8px;
+    font-family: 'Inter'; font-size:1.1rem;
+}
+
+.childflex p{
+   font-family: 'Inter'; font-size:0.95rem;
+    /* margin: 5px 0 0; */
+    color: white;
+    line-height: 1.6;
+}
+
+.vertical-stack{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.childflex article {
+  border-top: 1px solid #5c5c7c;
+  padding-top: 25px;
+}
+.childflex article:first-of-type { border: 0; padding-top: 0; }
+
+.cards{
+  display: flex;
+  gap: 25px;
+}
+
+.cardimage{
+  flex: 1;
+  display: flex;
+  gap: 15px;
+}
+
+.cardimage img{
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.cardimage .numbers{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(231, 80, 80);
+    font-family: 'Inter';
+}
+
+ .cardimage h2{
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 6px 0 4px;
+    font-family: 'Inter';
+ }
+
+ .cardimage h2:hover{color: red}
+ .cardimage p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: grey;
+    font-family: 'Inter';
+ }
+
+ /* this is the toggle burger icon which will show only when the view is phone  */
+.nav-check { display: none; }
+.hamburger { display: none; }
+
+/* when max height is 900 page will show like this */
+@media (max-width: 900px) {
+  header {
+    padding: 20px 5%;
+  }
+  nav {
+    gap: 20px;
+  }
+
+  .mainflex {
+    flex-direction: column;
+    padding: 0 5% 40px;
+  }
+
+  .bigphototext {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bigphototext h1 {
+    font-size: 2.4rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
+
+/* thisone is when height is 550 like maximun height is this */
+@media (max-width: 550px) {
+  .bigphototext h1 {
+    font-size: 1.8rem;
+  }
+
+  .cardimage img {
+    width: 80px;
+    height: 100px;
+  }
+  .cardimage h2 {
+    font-size: 1rem;
+  }
+  .cardimage p {
+    font-size: 0.8rem;
+  }
+
+  .childflex h2 {
+    font-size: 1.6rem;
+  }
+  .childflex h3 {
+    font-size: 1rem;
+  }
+  .childflex p {
+    font-size: 0.85rem;
+  }
+}
+
+/* this is for mobile phone view */
+@media (max-width: 600px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 101;
+    gap: 5px;
+    cursor: pointer;
+     margin-left: auto;
+  }
+  .hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #000;
+    transition: .3s;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 250px;
+    background: white;
+    flex-direction: column;
+    padding: 25vh 20px;
+    gap: 25px;
+    transform: translateX(100%);
+    transition: transform .35s ease;
+    box-shadow: -5px 0 25px rgba(0,0,0,.15);
+  }
+
+  .nav-check:checked ~ nav {
+    transform: translateX(0);
+  }
+  .nav-check:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .nav-check:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-check:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0 5% 40px;
+  }
+  .bigphototext {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bigphototext h1 {
+    font-size: 2.4rem;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
