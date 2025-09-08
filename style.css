@@ -44,10 +44,6 @@ nav a:hover{color: red}
     padding: 0 60px 50px;
 }
 
-@media (max-width: 900px){
-  .mainflex{ flex-direction: column; }
-}
-
 .leftflex{
     /* thisis a shortchut for flex-grow */
     flex: 2.5;
